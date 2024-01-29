@@ -1,15 +1,18 @@
 table {
     border-collapse: collapse;
-    width: 50%;
-    margin-bottom: 20px;  }
+    width: 30%;
+    margin-right: 10px;
+    float: left;
+}
 
 th, td {
     border: 1px solid #ddd;
-    padding: 8px;
+    padding: 5px;  /* Ajusté pour rendre les cellules plus petites */
     text-align: left;
 }
+
 button {
     display: block;
-    
     margin-bottom: 20px;
+    clear: both;
 }

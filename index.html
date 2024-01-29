@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,20 +7,37 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<table id="table1">
-    <!-- Tableau 1 -->
-    <!-- Ajoutez vos données ici -->
-</table>
+<script>
+    // Création des tableaux en JavaScript
+    let tableau1 = [];
+    let tableau2 = [];
 
-<table id="table2">
-    <!-- Tableau 2 -->
-    <!-- Ajoutez vos données ici -->
-</table>
+    // Remplissage du tableau1 avec des nombres de 1 à 22
+    for (let i = 1; i <= 22; i++) {
+        tableau1.push(i);
+    }
+
+    // Remplissage du tableau2 avec des nombres de 5 à 26
+    for (let i = 5; i <= 26; i++) {
+        tableau2.push(i);
+    }
+
+    document.write('<table id="table1">');
+    tableau1.forEach(function (nombre) {
+        document.write('<tr><td>' + nombre + '</td></tr>');
+    });
+    document.write('</table>');
+
+    document.write('<table id="table2">');
+    tableau2.forEach(function (nombre) {
+        document.write('<tr><td>' + nombre + '</td></tr>');
+    });
+    document.write('</table>');
+</script>
 
 <button onclick="trouverIntersection()">Trouver Intersection</button>
 
 <div id="resultat">
-    <!-- Résultat affiché ici -->
 </div>
 
 <script src="script.js"></script>
